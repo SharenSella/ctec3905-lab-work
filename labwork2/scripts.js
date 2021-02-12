@@ -1,7 +1,8 @@
 let clickCount = 0;
 
 function incrementClickCount() {
-  console.log("Hello!!");
+  clickCount++;
+  target.textContent = clickCount;
 }
 
-myTrigger.addEventListener('click', greetMe);
+myTrigger.addEventListener('click', incrementClickCount);
